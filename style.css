@@ -19,6 +19,12 @@
     border: none;
 }
 
+.btn_primary:hover{
+    box-shadow: 0 0 10px #424242;
+    transition: 0.6s;
+    color: #424242;
+}
+
 /* shared style */
 .display_flex{
     display: flex;
@@ -35,6 +41,10 @@
     background-color: rgb(255, 144, 14, 0.1);
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* header style */
 
 /* navbar related style */
@@ -50,14 +60,28 @@
 }
 .nav_items{
     list-style: none;
-    gap: 50px;
+    gap: 30px;
    
 }
 
 .nav_link{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+}
+
+.home_samp{
+    color: #FF900E;
+}
+
+.home_samp:hover{
+    color: #424242;
+}
+
+.nav_link:hover{
+    color: #FF900E;
+    transition: 0.6s;
+    
 }
 
 .navbar, .banner{
