@@ -25,6 +25,10 @@
     color: #424242;
 }
 
+main >section{
+    margin-top: 130px;
+}
+
 /* shared style */
 .display_flex{
     display: flex;
@@ -110,12 +114,138 @@ main{
 .banner_image{
     width: 100%;
     border-radius: 20px;
+    padding-bottom: 45px;
+}
+
+/* Our future style css */
+.teams{
+    align-items: center;
+}
+
+.team_img_contener{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+
+}
+
+.our_features{
+    margin-left: 130px;
+    max-width: 500px;
+    /* border: 2px solid #FF900E; */
+}
+
+.Feature_title{
+    font-size: 3.0rem;
+    font-weight: 800;
+}
+
+#quick_list{
+    font-weight: 500;
+}
+
+.feature{
+    color: #FF900E;
+}
+
+/* Love & enjoy section */
+
+.love_enjoy{
+    max-width: 1440px;
+    justify-content: space-between;
+    gap: 55px;
+ 
+    
+}
+
+.love_enjoy_text{
+    max-width: 586px;
+    /* border: 2px solid #FF900E; */
+
+
+}
+
+.love_title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    
+}
+
+.love_box-text{
+    margin-top: 50px;
+}
+.love_box {
+    padding: 30px;
+    box-shadow: 0 0 10px #83838388;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.love_box >h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+    
+}
+
+
+.box_button{
+    width: 340px;
+    font-size: 3rem;
+    background-color: #FF900E;
+    color: white;
+    text-align: center;
+ 
+
+    
+}
+
+.ten_ex{
+    font-size: 2rem;
+    font-weight: 500;
+   
+   
 }
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav_link{
+    .navbar,
+    .nav_link
+    .teams
+    {
         flex-direction: column;
+    
     }
 
-}
+    .brand{
+        font-size: 3rem;
+
+    }
+
+
+    .team_img_contener{
+        grid-template-columns: repeat(1, 1fr);
+        
+        
+      
+    }
+    
+    .our_features{
+        margin-left: 30px;
+       
+    }
+
+   }
+
+ /* medium size device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+       
+    .teams{
+        flex-direction: column;
+    }
+    .our_features{
+        margin: 50px;
+    }
+
+
