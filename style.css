@@ -61,8 +61,6 @@ main{
 .brand{
     font-weight: 700;
     font-size: 3rem;
-    /* border: 5px solid #FF900E; */
-    background-color: #ffffff;
     border-right: none;
     border-radius: 5px;
     
@@ -72,7 +70,6 @@ main{
     /* background-color: #FF900E; */
     color: #FF900E;
     font-weight: 700;
-    /* border: 5px solid rgb(24, 24, 24); */
     border-left: none;
     padding: 0 5px;
     border-radius: 0px 5px 5px 0px;
@@ -145,10 +142,10 @@ main{
 }
 
 .team_img_contener{
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-
 
 }
 
@@ -158,76 +155,66 @@ main{
     /* border: 2px solid #FF900E; */
 }
 
-.Feature_title{
-    font-size: 3.0rem;
-    font-weight: 800;
+.feature_title{
+    font-size: 3rem
 }
 
-#quick_list{
-    font-weight: 500;
-}
 
 .feature{
     color: #FF900E;
+    font-weight: 800;
 }
 
-/* Love & enjoy section */
-
-.love_enjoy{
-    max-width: 1440px;
-    justify-content: space-between;
-    gap: 55px;
- 
-    
-}
-
-.love_enjoy_text{
-    max-width: 586px;
-    /* border: 2px solid #FF900E; */
-
+/* feature love section */
+.features{
+    display: flex;
+    gap: 140px;
 
 }
 
-.love_title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    
+#title_side_style{
+    border-left: 6px solid #FF900E;
+    padding-left: 20px;
 }
 
-.love_box-text{
-    margin-top: 50px;
-}
-.love_box {
+.feature_card{
     padding: 30px;
-    box-shadow: 0 0 10px #83838388;
-    border-radius: 10px;
+    box-shadow: 0 4px 30px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 8px;
     margin-bottom: 20px;
-    
-    
-}
-.love_box >h5{
-    font-size: 20px;
-    font-weight: 600;
-    margin: auto;
-    
-}
-
-
-.box_button{
-    width: 340px;
-    font-size: 3rem;
-    background-color: #FF900E;
-    color: white;
-    text-align: center;
  
 }
 
-.ten_ex{
-    font-size: 2rem;
-    font-weight: 500;
+
+.Feature_title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
 }
+
+#experience_badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -130px ;
+    margin-left: -100px;
+  
+} 
+
+#experience_year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#experience_badge:hover{
+    color: white;
+
+}
+
+
 
 /* some facts related style */
+
 .section_title{
     font-size: 45px;
     color: #131313;
@@ -288,16 +275,29 @@ main{
     filter: grayscale(100%);
 }
 
+/* footer style */
+.footer_section{
+    max-width: 1440px;
+    margin: 100px auto;
+    background-color: #FFF4E7;
+ 
+}
+
+.footer_text{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 30px 0;
+    text-align: center;
+    color: #424242;
+    
+}
+
 
 /*--------------------------------------*/
 /* responsive media query */
-@media screen and (max-width: 576px) {
-    .navbar,
-    .nav_link
-    .teams
-    {
+@media screen and (max-width: 576px){
+    .navbar, .nav_items{
         flex-direction: column;
-    
     }
 
     .brand{
@@ -305,8 +305,15 @@ main{
 
     }
 
+    .teams{
+        flex-direction: column;
+        
+    }
+  
+    
 
-    .team_img_contener, .facts_container{
+
+    /* .team_img_contener, .facts_container{
         grid-template-columns: repeat(1, 1fr);
         
       
@@ -330,12 +337,21 @@ main{
         align-items: center;
     }
 
-   }
+   } */
 
  /* medium size device */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-       
+     .navbar, .nav_items{
+        max-width: 1440px;
+        flex-direction: column;
+    }
+
+    .brand{
+        font-size: 3rem;
+
+    }
+   
     .teams{
         flex-direction: column;
     }
@@ -344,4 +360,4 @@ main{
     }
 
 
-}
+} */
