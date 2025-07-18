@@ -142,7 +142,6 @@ main{
 }
 
 .team_img_contener{
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -151,7 +150,7 @@ main{
 
 .our_features{
     margin-left: 130px;
-    max-width: 500px;
+    max-width: 530px;
     /* border: 2px solid #FF900E; */
 }
 
@@ -293,7 +292,9 @@ main{
 }
 
 
-/*--------------------------------------*/
+/*----------------End----------------------*/
+
+
 /* responsive media query */
 @media screen and (max-width: 576px){
     .navbar, .nav_items{
@@ -304,60 +305,117 @@ main{
         font-size: 3rem;
 
     }
-
+/* teams work Our future style */
     .teams{
         flex-direction: column;
         
     }
   
-    
-
-
-    /* .team_img_contener, .facts_container{
+    .team_img_contener{
         grid-template-columns: repeat(1, 1fr);
-        
-      
     }
 
-    .facts_container{
-        justify-content: center;
-        gap: 50px;
-    }
-    
+
     .our_features{
-        margin-left: 30px;
-
-       
+        margin-left: 20px;
     }
 
-    .sponspors_companies{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
-      
-        align-items: center;
-    }
-
-   } */
-
- /* medium size device */
-
-@media screen and (min-width:576px) and (max-width:992px) {
-     .navbar, .nav_items{
-        max-width: 1440px;
+    
+    /* features */
+    .features{
         flex-direction: column;
     }
 
-    .brand{
-        font-size: 3rem;
-
+    .feature_image{
+        max-width: 100%;
     }
+
+    #experience_badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .feature_image{
+        max-width: 100%;
+        
+    }
+    /*some facts-----------  */
+ .some_facts{
+        text-align: center;
+    }
+
+    .fact_description{
+        max-width: 500px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+
+    .facts_container{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 500px;
+        margin-left: 80px ;
+        gap: 30px;
+    }
+
+      /* Our Sponspors----------- */
+    .sponspors_companies{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 500px;
+        margin-left: 90px ;
+        gap: 50px;
+        text-align: center;
+    }
+
+
+}
    
+
+  
+
+ 
+
+ /* medium size device------------ */
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
     .teams{
         flex-direction: column;
     }
+
     .our_features{
-        margin: 50px;
+        margin: 50px auto;
     }
 
 
-} */
+/* features */
+    .features{
+        flex-direction: column;
+    }
+
+     #experience_badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+/* some facts---------- */
+    .some_facts{
+        text-align: center;
+    }
+
+    .fact_description{
+        max-width: 500px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+
+    .facts_container{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+
+
+}
