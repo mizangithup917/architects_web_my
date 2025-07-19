@@ -164,17 +164,16 @@ main{
     font-weight: 800;
 }
 
-/* feature love section */
+/* feature love section ------------*/
 .features{
-    display: flex;
-    gap: 140px;
-
+    max-width: 1440pxpx;
+    gap: 40px;
 }
 
-#title_side_style{
+/* #title_side_style{
     border-left: 6px solid #FF900E;
     padding-left: 20px;
-}
+} */
 
 .feature_card{
     padding: 30px;
@@ -185,22 +184,22 @@ main{
 }
 
 
-.Feature_title{
+/* .Feature_title{
     font-weight: 600;
     font-size: 1.25rem;
-    margin: 0;
-}
+    
+} */
 
-#experience_badge{
+/* #experience_badge{
     padding: 45px 42px;
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: -130px ;
     margin-left: -100px;
   
-} 
+}  */
 
-#experience_year{
+/* #experience_year{
     font-size: 4rem;
     font-weight: 700;
 }
@@ -208,7 +207,7 @@ main{
 #experience_badge:hover{
     color: white;
 
-}
+} */
 
 
 
@@ -338,8 +337,10 @@ main{
         max-width: 100%;
         
     }
+
+
     /*some facts-----------  */
- .some_facts{
+    .some_facts{
         text-align: center;
     }
 
